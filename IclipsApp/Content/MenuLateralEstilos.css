@@ -1,0 +1,259 @@
+﻿.nav-side-menu {
+    overflow: auto;
+    font-size: 12px;
+    font-weight: 200;
+    background-color: #384150;
+    position: fixed;
+    top: 0px;
+    width: 220px;
+    height: 100%;
+    color: #e1ffff;
+}
+
+    .nav-side-menu ul,
+    .nav-side-menu li {
+        list-style: none;
+        margin: 0px;
+        line-height: 50px;
+        cursor: pointer;
+    }
+
+        .nav-side-menu ul :not(collapsed) .arrow:before,
+        .nav-side-menu li :not(collapsed) .arrow:before {
+            font-family: FontAwesome;
+            content: "\f078";
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            vertical-align: middle;
+            float: right;
+        }
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.circle-em-andamento {
+    background-color: #3596c9;
+}
+
+.circle-atrasadas {
+    background-color: #e35b5b;
+}
+
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+    border-left: 5px solid #b33c7d;
+    background-color: #212a3a;
+}
+
+.nav-side-menu li {
+    padding: 0px;
+    border-left: 5px solid #2e353d;
+    border-bottom: 1px solid #282f3a;
+    height: 50px;
+}
+
+    .nav-side-menu li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-left: 20px;
+    }
+
+        .nav-side-menu li a i {
+            padding-left: 10px;
+            width: 20px;
+            padding-right: 20px;
+        }
+
+    .nav-side-menu li:hover {
+        border-left: 5px solid #3596c9;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+.menu-content {
+    padding: 20px 0 0 0;
+}
+
+.titulo-pagina {
+    margin: 25px 15px 0 15px;
+    border-top: 1px solid #dddfe0;
+    border-bottom: 1px solid #dddfe0;
+    height: 42px;
+    line-height: 42px;
+}
+
+    .titulo-pagina span {
+        font-size: 16pt;
+        color: #3d4f61;
+    }
+
+#main {
+    width: calc(100% - 220px);
+    float: right;
+}
+
+.nav-side-menu .menu-list .menu-content {
+    display: block;
+}
+
+#main {
+    width: calc(100% - 220px);
+    float: right;
+}
+
+body {
+    margin: 0px;
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    background-color: #f1f1f1;
+}
+
+.checkbox label {
+    padding-left: 0 !important;
+    min-height: 14px;
+    width: 14px;
+    margin: 0 20px 0 20px;
+}
+
+    .checkbox label:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+.table tbody tr.highlight td .checkbox .cr {
+    color: #000000;
+}
+
+.checkbox .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #9bb2c9;
+    background-color: #ffffff;
+    width: 1em;
+    height: 1em;
+    float: left;
+    margin-right: .5em;
+}
+
+    .checkbox .cr .cr-icon {
+        position: absolute;
+        font-size: .6em;
+        line-height: 0;
+        top: 50%;
+        left: 20%;
+    }
+
+.checkbox label input[type="checkbox"] {
+    display: none;
+}
+
+    .checkbox label input[type="checkbox"] + .cr > .cr-icon {
+        opacity: 0;
+    }
+
+    .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon {
+        opacity: 1;
+    }
+
+.checkbox {
+    margin-top: 13px;
+}
+
+.field-email {
+    color: #266b9e;
+}
+
+.grid {
+    margin: 25px 0 0 15px;
+    width: calc(100% - 30px);
+}
+
+.grid-row {
+    height: 50px;
+}
+
+.grid-column {
+    vertical-align: middle !important;
+}
+
+.grid tbody tr td span:not(.field-email) {
+    font-size: 10pt;
+    color: #272e31;
+    font-weight: bold;
+}
+
+.checkbox-cell {
+    width: 50px;
+    padding: 0 !important;
+}
+
+.tag {
+    font-size: 8pt;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    height: 21px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 20px;
+    height: 20px;
+    line-height: 20px;
+    width: 80px;
+}
+
+.tag-novo {
+    background-color: #2ec7c8;
+}
+
+.tag-alteracao {
+    background-color: #e07182;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: #ffffff;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+    background-color: #fafafa;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #e7e9eb;
+}
+
+.table tbody tr.highlight td {
+    background-color: #9bb2c9;
+}
+
+    .table tbody tr.highlight td span {
+        color: #ffffff;
+    }
+
+.btn-cadastrar {
+    float: right;
+    margin-top: 1px;
+    background-color: #3596c9;
+    width: 160px;
+}
+
+.column-titulo {
+    width: 50%;
+}

@@ -1,0 +1,218 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+}
+
+<div class="nav-side-menu">
+    <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse out">
+            <li id="link-em-andamento" data-toggle="collapse" data-target="#products">
+                <a href="#"> <span>Em andamento</span> <span class="circle circle-em-andamento">@ViewBag.EmAndamentoQtd</span></a>
+            </li>
+            <li id="link-atrasadas" data-toggle="collapse" data-target="#products">
+                <a href="#"> <span>Atrasadas</span> <span class="circle circle-atrasadas">@ViewBag.AtrasadasQtd</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container" id="main">
+
+
+    <div class="row" id="DivGeral" style="display:none;">
+        <div class="col-md-12">
+            <div class="titulo-pagina">
+
+                <span>Geral</span>
+                <button class="btn-cadastrar btn btn-primary botaogeral">Cadastrar loren</button>
+            </div>
+            <div class="row">
+                <div class="col-md-12 grid-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-hover">
+                                <tbody>
+                                    @foreach (var p in ViewBag.ListaPessoasGeral)
+                                    {
+                                        <tr id="linha">
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
+                                            <td>
+                                                @p.Nome
+                                            </td>
+                                            <td>
+                                                @p.Email
+                                            </td>
+                                            <td>
+                                                @if (p.Situacao == 0)
+                                                {
+                                                    <span class="badge badge-success">Em Andamento</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge badge-danger">Atrasadas</span>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="DivPessoasOrdenadas" style="display:none;">
+        <div class="col-md-12">
+            <div class="titulo-pagina">
+
+                <span>Em andamento (Ordenado)</span>
+                <button class="btn-cadastrar btn btn-primary botaogeral">Cadastrar loren</button>
+            </div>
+            <div class="row">
+                <div class="col-md-12 grid-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-hover">
+                                <tbody>
+                                    @foreach (var p in ViewBag.ListaPessoasOrdenadas)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
+                                            <td>
+                                                @p.Nome
+                                            </td>
+                                            <td>
+                                                @p.Email
+                                            </td>
+                                            <td>
+                                                @if (p.Situacao == 0)
+                                                {
+                                                    <span class="badge badge-success">Em Andamento</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge badge-danger">Atrasadas</span>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="DivEmAndamento" style="display:none;">
+        <div class="col-md-12">
+            <div class="titulo-pagina">
+
+                <span>Em andamento</span>
+                <button class="btn-cadastrar btn btn-primary botaogeral">Cadastrar loren</button>
+            </div>
+            <div class="row">
+                <div class="col-md-12 grid-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-hover">
+                                <tbody>
+                                    @foreach (var p in ViewBag.ListaPessoasEmAndamento)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
+                                            <td>
+                                                @p.Nome
+                                            </td>
+                                            <td>
+                                                @p.Email
+                                            </td>
+                                            <td>
+                                                @if (p.Situacao == 0)
+                                                {
+                                                    <span class="badge badge-success">Em Andamento</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge badge-danger">Atrasadas</span>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="DivAtrasados" style="display:none;">
+        <div class="col-md-12">
+            <div class="titulo-pagina">
+
+                <span>Atrasados</span>
+                <button class="btn-cadastrar btn btn-primary botaogeral">Cadastrar loren</button>
+            </div>
+            <div class="row">
+                <div class="col-md-12 grid-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-hover">
+                                <tbody>
+                                    @foreach (var p in ViewBag.ListaPessoasAtrasadas)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
+                                            <td>
+                                                @p.Nome
+                                            </td>
+                                            <td>
+                                                @p.Email
+                                            </td>
+                                            <td>
+                                                @if (p.Situacao == 0)
+                                                {
+                                                    <span class="badge badge-success">Em Andamento</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge badge-danger">Atrasadas</span>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+</div>
+

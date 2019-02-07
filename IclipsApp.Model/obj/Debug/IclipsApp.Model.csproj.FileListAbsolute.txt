@@ -1,0 +1,14 @@
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\bin\Debug\IclipsApp.Model.dll.config
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\bin\Debug\IclipsApp.Model.dll
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\bin\Debug\IclipsApp.Model.pdb
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\bin\Debug\EntityFramework.dll
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\bin\Debug\EntityFramework.xml
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\obj\Debug\IclipsApp.Model.csprojAssemblyReference.cache
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\obj\Debug\IclipsApp.Model.csproj.CoreCompileInputs.cache
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\obj\Debug\IclipsApp.Model.csproj.CopyComplete
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\obj\Debug\IclipsApp.Model.dll
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\obj\Debug\IclipsApp.Model.pdb
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\obj\Debug\IclipsApp.Model.Migrations.Inicial01.resources
+C:\Users\Icaro\source\repos\IclipsApp\IclipsApp.Model\obj\Debug\IclipsApp.Model.csproj.GenerateResource.cache
